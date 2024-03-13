@@ -324,7 +324,7 @@ function App() {
                                 Membuat Website Untuk Klien Dengan ReactJS
                               </li>
                               <li>
-                                Membuat pembuatan REST API Dengan Java Springboot
+                                Mempelajari pembuatan REST API Dengan Java Springboot
                               </li>
                             </div>
                           </div>
