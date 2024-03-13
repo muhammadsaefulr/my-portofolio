@@ -7,22 +7,16 @@ import "aos/dist/aos.css";
 import {
   NavigationMenu,
   NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  NavigationMenuViewport,
 } from "./@/components/ui/navigation-menu";
-import { InstagramLogoIcon } from "@radix-ui/react-icons";
 import { SiTailwindcss, SiTypescript } from "react-icons/si";
-import { VscReactions } from "react-icons/vsc";
 import { FaReact } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaGolang } from "react-icons/fa6";
 
 function App() {
-  const [position, setPosition] = useState("bottom");
   const [darkMode, setDarkmode] = useState<boolean>(false);
 
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
