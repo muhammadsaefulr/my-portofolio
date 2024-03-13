@@ -92,7 +92,7 @@ function App() {
               <div className="">
                 <div className="flex space-x-2">
                   <div className="flex mx-2">
-                    <img src={"src/e-logo.png"} width={25} height={15} />
+                    <img src={"/e-logo.png"} width={25} height={15} />
                     <p className="font-bold text-2xl text-maincolor">PUL</p>
                     <p className="font-bold text-black dark:text-white">DEV</p>
                   </div>
