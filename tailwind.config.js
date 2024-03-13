@@ -20,7 +20,7 @@ module.exports = {
       backgroundImage: {
         "hero-pattern":
           "linear-gradient(to bottom, url('/src/assets/strip.svg'), transparent",
-        "cube-strip": "url('/src/assets/strip.svg')",
+        "cube-strip": "url('/strip.svg')",
       },
       colors: {
         maincolor: "#00FCCE",
