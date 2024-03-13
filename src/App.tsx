@@ -245,9 +245,9 @@ function App() {
                   See Who I Am, What Language I Use, and My Experience
                 </p>
               </div>
-              <div className="flex pt-12 lg:space-x-20 xl: space-x-4">
-                <div className="border-l h-[195vh]"></div>
-                <div className="w-1/2">
+              <div className="lg:flex pt-12 lg:space-x-20 sm:inline-block space-x-4">
+                <div className="lg:border-l lg:h-[195vh] sm:hidden"></div>
+                <div className="lg:w-1/2 sm:w-full">
                   <div className="text-gray-400 ">
                     <div className="">
                       <h2 className="">
@@ -355,8 +355,8 @@ function App() {
                     </div>
                   </div>
                 </div>
-                <div className="w-1/2">
-                  <p>Beberapa Stack Yang Saya pakai dan yang saya pelajari</p>
+                <div className="lg:w-1/2 sm:w-full pt-6">
+                  <p className="">Beberapa Stack Yang Saya pakai dan yang saya pelajari</p>
                   <div className="pt-6">
                     <h2 className="font-bold text-2xl">Javascript</h2>{" "}
                     <p className="text-gray-400 pt-4">
