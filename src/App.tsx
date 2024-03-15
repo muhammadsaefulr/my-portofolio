@@ -15,6 +15,7 @@ import { SiTailwindcss, SiTypescript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaGolang } from "react-icons/fa6";
+import { PiLinkedinLogoFill } from "react-icons/pi";
 
 function App() {
   const [darkMode, setDarkmode] = useState<boolean>(false);
@@ -66,10 +67,6 @@ function App() {
       link: "#about",
     },
     {
-      title: "Skills",
-      link: "#skills",
-    },
-    {
       title: "Experience",
       link: "#experience",
     },
@@ -91,11 +88,15 @@ function App() {
             <div className="flex justify-between">
               <div className="">
                 <div className="flex space-x-2">
-                  <div className="flex mx-2">
-                    <img src={"/e-logo.png"} width={25} height={15} />
-                    <p className="font-bold text-2xl text-maincolor">PUL</p>
-                    <p className="font-bold text-black dark:text-white">DEV</p>
-                  </div>
+                  <a href="/">
+                    <div className="flex mx-2">
+                      <img src={"/e-logo.png"} width={25} height={15} />
+                      <p className="font-bold text-2xl text-maincolor">PUL</p>
+                      <p className="font-bold text-black dark:text-white">
+                        DEV
+                      </p>
+                    </div>
+                  </a>
                   <ul className="lg:flex space-x-3 justify-between mx-3 mt-1 leading-tighter tracking-tighter text-white text-md sm: hidden">
                     {dataMenubar.map((data) => (
                       <a key={data.title} href={data.link}>
@@ -142,14 +143,16 @@ function App() {
                   </div>
                 </div>
                 <div className="lg:flex space-x-2 md: hidden">
-                  <div className="rounded-full bg-gray-800 dark:bg-white p-2 w-8 h-8 duration-100 transition ease-in hover:bg-cyan-100 p-2 flex justify-center">
-                    <GithubIcon
-                      className="pb-1 text-white dark:text-black"
-                      size={20}
-                    />
+                  <div className="rounded-full cursor-pointer bg-gray-800 dark:bg-white p-2 w-8 h-8 duration-100 transition ease-in hover:bg-cyan-100 p-2 flex justify-center">
+                    <a href="https://github.com/muhammadsaefulr/">
+                      <GithubIcon
+                        className="pb-1 text-white dark:text-black"
+                        size={20}
+                      />
+                    </a>
                   </div>
-                  <div className="rounded-full bg-gray-800 dark:bg-white p-2 w-8 h-8 duration-100 transition ease-in hover:bg-cyan-100 p-2 flex justify-center">
-                    <a href="">
+                  <div className="rounded-full cursor-pointer bg-gray-800 dark:bg-white p-2 w-8 h-8 duration-100 transition ease-in hover:bg-cyan-100 p-2 flex justify-center">
+                    <a href="https://www.instagram.com/msaepul07_/">
                       <Instagram
                         className="pb-1 text-white dark:text-black"
                         size={20}
@@ -192,9 +195,10 @@ function App() {
                     </p>
                   </div>
                   <div data-aos="fade-up" className="flex gap-x-2">
-                    <a href="https://www.instagram.com/msaepul07_/">
+                    <a href="https://www.linkedin.com/in/muhammadsaeful/">
                       <button className="flex p-2 px-3 rounded-md bg-maincolor text-black transition duration-100 ease-in hover:bg-gray-300">
-                        Contact Me
+                        Contact Me{" "}
+                        <PiLinkedinLogoFill className="mx-2" size={24} />
                       </button>
                     </a>
                   </div>
@@ -237,9 +241,9 @@ function App() {
             </div>
           </section>
 
-          <section id="about" className="w-full min-h-full flex">
+          <section className="w-full min-h-full flex pb-12">
             <div className="container px-12">
-              <div className="text-blue">
+              <div id="about" className="text-blue">
                 <p className="text-5xl font-bold text-gray-400">About me</p>
                 <p className="text-2xl pt-6 text-gray-400 dark:text-white">
                   See Who I Am, What Language I Use, and My Experience
@@ -302,7 +306,7 @@ function App() {
                           saya tau
                         </p>
                         <hr className="pt-6 mt-6" />
-                        <div className="">
+                        <div id="experience" className="">
                           <h2 className="font-bold text-2xl">
                             Pengalaman Kerja
                           </h2>
@@ -324,7 +328,8 @@ function App() {
                                 Membuat Website Untuk Klien Dengan ReactJS
                               </li>
                               <li>
-                                Mempelajari pembuatan REST API Dengan Java Springboot
+                                Mempelajari pembuatan REST API Dengan Java
+                                Springboot
                               </li>
                             </div>
                           </div>
@@ -335,17 +340,18 @@ function App() {
                               src="https://www.webnesia.co.id/wp-content/uploads/2018/12/logo-webnesia-web-developer.png.webp"
                             />
                             <h2 className="font-bold text-xl">
-                              Article Writter & Social media management - PT Ardev digital indonesia (intern)
+                              Article Writter & Social media management - PT
+                              Ardev digital indonesia (intern)
                             </h2>
                             <div className="pt-3 mx-3">
+                              <li>Mempelajari seo dan copywriting</li>
                               <li>
-                                Mempelajari seo dan copywriting
+                                Mempelajari pembuatan website dengan wordpress
+                                elementor
                               </li>
                               <li>
-                                Mempelajari pembuatan website dengan wordpress elementor
-                              </li>
-                              <li>
-                                Mempelajari cara mempromosikan produk dengan sosial media
+                                Mempelajari cara mempromosikan produk dengan
+                                sosial media
                               </li>
                               <li>Membuat artikel</li>
                             </div>
@@ -355,8 +361,10 @@ function App() {
                     </div>
                   </div>
                 </div>
-                <div className="lg:w-1/2 sm:w-full pt-6">
-                  <p className="">Beberapa Stack Yang Saya pakai dan yang saya pelajari</p>
+                <div className="lg:w-1/2 sm:w-full pt-6" id="#skills">
+                  <p className="">
+                    Beberapa Stack Yang Saya pakai dan yang saya pelajari
+                  </p>
                   <div className="pt-6">
                     <h2 className="font-bold text-2xl">Javascript</h2>{" "}
                     <p className="text-gray-400 pt-4">
@@ -403,8 +411,6 @@ function App() {
                 </div>
               </div>
             </div>
-          </section>
-          <section>
           </section>
         </main>
       </div>
