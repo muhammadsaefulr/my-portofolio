@@ -72,6 +72,18 @@ function App() {
     },
   ];
 
+  const enjoyCreating = [
+    {
+      title: "Landing Page",
+    },
+    {
+      title: "POS Website Platform",
+    },
+    {
+      title: "And Other",
+    },
+  ];
+
   return (
     <>
       <div className="flex flex-col ">
@@ -279,26 +291,14 @@ function App() {
                         I really enjoy creating websites like :
                       </p>
                       <div className="block">
-                        <div className="flex text-xl pt-6">
-                          <div className="border rounded-full mr-2 bg-white" />
-                          <p className="font-bold text-gray-400 dark:text-white">
-                            Platform Website
-                          </p>
-                        </div>
-
-                        <div className="flex text-xl pt-6">
-                          <div className="border rounded-full mr-2 bg-white" />
-                          <p className="font-bold text-gray-400 dark:text-white">
-                            ERP System
-                          </p>
-                        </div>
-
-                        <div className="flex text-xl pt-6">
-                          <div className="border rounded-full mr-2 bg-white" />
-                          <p className="font-bold text-gray-400 dark:text-white">
-                            And Other
-                          </p>
-                        </div>
+                        {enjoyCreating.map((data) => (
+                          <div className="flex text-xl pt-6">
+                            <div className="border rounded-full mr-2 bg-white" />
+                            <p className="font-bold text-gray-400 dark:text-white">
+                              {data.title}
+                            </p>
+                          </div>
+                        ))}
 
                         <p className="pt-6">
                           Saya tertarik untuk belajar hal baru tentang
@@ -408,6 +408,27 @@ function App() {
                       mengembangkan bagian backend :D
                     </p>
                   </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section className="pb-12 pt-4">
+            <div className="">
+              <div className="flex justify-center">
+                <div className="block">
+                  <h1 className="font-bold text-center text-4xl">
+                    My Projects
+                  </h1>
+                  <p className="text-2xl text-center pt-5">
+                    See My rencent projects
+                  </p>
+                </div>
+
+              </div>
+              <div className="flex justify-around">
+                <div className=""></div>
+                <div className="bg-white">
+                  p
                 </div>
               </div>
             </div>
