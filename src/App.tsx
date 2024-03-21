@@ -63,7 +63,7 @@ function App() {
     },
     {
       title: "Project",
-      link: "#about",
+      link: "#project",
     },
     {
       title: "Experience",
@@ -431,7 +431,7 @@ function App() {
               </div>
             </div>
           </section>
-          <section className="pb-5 pt-12">
+          <section id="project" className="pb-5 pt-12">
             <div className="container px-12">
               <div id="about" className="text-blue">
                 <p className="text-5xl font-bold text-gray-400">My Projects</p>
