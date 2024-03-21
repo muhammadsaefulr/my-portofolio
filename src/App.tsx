@@ -12,14 +12,13 @@ import {
   NavigationMenuTrigger,
 } from "./@/components/ui/navigation-menu";
 import { SiTailwindcss, SiTypescript } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
+import { FaGithub, FaReact } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaGolang } from "react-icons/fa6";
 import { PiLinkedinLogoFill } from "react-icons/pi";
 
 function App() {
   const [darkMode, setDarkmode] = useState<boolean>(false);
-
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
   AOS.init();
@@ -81,6 +80,26 @@ function App() {
     },
     {
       title: "And Other",
+    },
+  ];
+
+  const projectsDetails = [
+    {
+      heading: "Gopotek",
+      subHeading: "Platform website manajemen apotek",
+      description:
+        "Platform website manajemen apotek sederhana yang dibuat untuk memdahkan pengguna memantau stok dan penjualan produk",
+      projectPreview: "/project/ss-gopotek.png",
+      isAvailableOnGithub: true,
+      githubLink: "https://github.com/muhammadsaefulr/ApotekNextJS"
+    },
+    {
+      heading: "Saksiummat",
+      subHeading: "Platform Website Manajemen Data",
+      description:"Platform Website yang digunakan untuk melihat data saksi partai ummat",
+      projectPreview: "/project/ss-saksiummat.png",
+      isAvailableOnGithub: false,
+      githubLink: ""
     },
   ];
 
@@ -340,7 +359,7 @@ function App() {
                               src="https://www.webnesia.co.id/wp-content/uploads/2018/12/logo-webnesia-web-developer.png.webp"
                             />
                             <h2 className="font-bold text-xl">
-                              Article Writter & Social media management - PT
+                              Article Writter & Socummatial media management - PT
                               Ardev digital indonesia (intern)
                             </h2>
                             <div className="pt-3 mx-3">
@@ -412,24 +431,74 @@ function App() {
               </div>
             </div>
           </section>
-          <section className="pb-12 pt-4">
-            <div className="">
-              <div className="flex justify-center">
-                <div className="block">
-                  <h1 className="font-bold text-center text-4xl">
-                    My Projects
-                  </h1>
-                  <p className="text-2xl text-center pt-5">
-                    See My rencent projects
-                  </p>
-                </div>
-
+          <section className="pb-5 pt-12">
+            <div className="container px-12">
+              <div id="about" className="text-blue">
+                <p className="text-5xl font-bold text-gray-400">My Projects</p>
+                <p className="text-2xl pt-6 text-gray-400 dark:text-white">
+                  See my latest related project
+                </p>
               </div>
-              <div className="flex justify-around">
-                <div className=""></div>
-                <div className="bg-white">
-                  p
-                </div>
+              <div className="py-12">
+                {projectsDetails.map((data) => (
+                  <a className={data.isAvailableOnGithub === true ? "" : "pointer-events-none"} href={data.githubLink}>
+                  <div className="lg:flex sm:block justify-between py-6">
+                    <div className="w-2/3">
+                      <div className="mb-12">
+                        <p className="font-bold text-2xl text-maincolor">
+                          {data.heading}
+                        </p>
+                        <div className="">
+                          <h1 className="font-bold text-3xl w-25 py-3">
+                            {data.subHeading}
+                          </h1>
+                          <p className="text-md lg:w-3/4 sm: w-full">{data.description}</p>
+                        </div>
+                      </div>
+
+                      <div
+                        className="lg:flex w-[80%] transition duration-200 ease-in border border-4 hover:border-2 rounded-lg p-2 py-3 gap-x-3 sm: hidden"
+                        style={
+                          data.isAvailableOnGithub === true
+                            ? { borderColor: "#0079f2" }
+                            : { borderColor: "gray" }
+                        }
+                      >
+                        <FaGithub className="px-3" size={100} />
+                        <div className="block p-2 pt-5">
+                          <p
+                            className="font-bold text-md"
+                            style={
+                              data.isAvailableOnGithub === true
+                                ? { color: "#00FCCE" }
+                                : {}
+                            }
+                          >
+                            {data.isAvailableOnGithub === true
+                              ? "Available On Github !"
+                              : "Not Available On Github"}
+                          </p>
+                          <p className="text-lg">
+                            {data.isAvailableOnGithub === true
+                              ? "This Project Is Available On Github"
+                              : "This Project Is Not Available On Github"}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="lg:w-2/3 block rounded-lg dark:bg-slate-800 light: bg-gray-400 sm: w-full">
+                      <div className="flex justify-start gap-x-3 p-2 py-3">
+                        <div className="rounded-full p-2 hover:bg-red-300 dark:hover:bg-red-600 light:hover:bg-red-300 dark:bg-gray-400 light:bg-red-300 sm:bg-red-300" />
+                        <div className="rounded-full p-2 hover:bg-yellow-300 dark:hover:bg-yellow-600 light:hover:bg-yellow-300 dark:bg-gray-400 light:bg-yellow-300 sm:bg-yellow-300" />
+                        <div className="rounded-full p-2 hover:bg-green-300 dark:hover:bg-green-600 light:hover:bg-green-300 dark:bg-gray-400 light:bg-green-300 sm:bg-green-300" />
+                      </div>
+                      <div className="bg-white flex justify-center">
+                        <img className="" src={data.projectPreview} />
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                ))}
               </div>
             </div>
           </section>
