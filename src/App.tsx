@@ -443,7 +443,7 @@ function App() {
                 {projectsDetails.map((data) => (
                   <a className={data.isAvailableOnGithub === true ? "" : "pointer-events-none"} href={data.githubLink}>
                   <div className="lg:flex sm:block justify-between py-6">
-                    <div className="w-2/3">
+                    <div className="lg:w-2/3 sm: w-full">
                       <div className="mb-12">
                         <p className="font-bold text-2xl text-maincolor">
                           {data.heading}
