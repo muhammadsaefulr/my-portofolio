@@ -359,7 +359,7 @@ function App() {
                               src="https://www.webnesia.co.id/wp-content/uploads/2018/12/logo-webnesia-web-developer.png.webp"
                             />
                             <h2 className="font-bold text-xl">
-                              Article Writter & Socummatial media management - PT
+                              Article Writter & Social media management - PT
                               Ardev digital indonesia (intern)
                             </h2>
                             <div className="pt-3 mx-3">
