@@ -488,9 +488,9 @@ function App() {
                     </div>
                     <div className="lg:w-2/3 block rounded-lg dark:bg-slate-800 light: bg-gray-400 sm: w-full">
                       <div className="flex justify-start gap-x-3 p-2 py-3">
-                        <div className="rounded-full p-2 hover:bg-red-300 dark:hover:bg-red-600 light:hover:bg-red-300 dark:bg-gray-400 light:bg-red-300 sm:bg-red-300" />
-                        <div className="rounded-full p-2 hover:bg-yellow-300 dark:hover:bg-yellow-600 light:hover:bg-yellow-300 dark:bg-gray-400 light:bg-yellow-300 sm:bg-yellow-300" />
-                        <div className="rounded-full p-2 hover:bg-green-300 dark:hover:bg-green-600 light:hover:bg-green-300 dark:bg-gray-400 light:bg-green-300 sm:bg-green-300" />
+                        <div className="rounded-full p-2 hover:bg-red-300 dark:hover:bg-red-600 light:hover:bg-red-300 dark:bg-gray-400 light:bg-red-300 lg: bg-red-400 sm:bg-red-300" />
+                        <div className="rounded-full p-2 hover:bg-yellow-300 dark:hover:bg-yellow-600 light:hover:bg-yellow-300 dark:bg-gray-400 light:bg-yellow-300 lg: bg-yellow-400 sm:bg-yellow-300" />
+                        <div className="rounded-full p-2 hover:bg-green-300 dark:hover:bg-green-600 light:hover:bg-green-300 dark:bg-gray-400 light:bg-green-300 lg: bg-green-400 sm:bg-green-300" />
                       </div>
                       <div className="bg-white flex justify-center">
                         <img className="" src={data.projectPreview} />
