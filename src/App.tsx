@@ -121,7 +121,7 @@ function App() {
                 <div className="flex space-x-2">
                   <a href="/">
                     <div className="flex mx-2">
-                      <img src={"/e-logo.png"} width={25} height={15} />
+                      <img src={"/e-logo.png"} width={25} height={10} />
                       <p className="font-bold text-2xl text-maincolor">PUL</p>
                       <p className="font-bold text-black dark:text-white">
                         DEV
@@ -216,7 +216,7 @@ function App() {
                   </h1>
                   <div data-aos="fade-right" className="lg:w-1/2 sm: w-full">
                     <p className="text-gray-500 md:text-xl dark:text-gray-400 w-15">
-                      Im{" "}
+                      Im want to be come{" "}
                       <a className="font-bold text-maincolor">
                         Fullstack Web Developer
                       </a>{" "}
@@ -280,7 +280,7 @@ function App() {
                   See Who I Am, What Language I Use, and My Experience
                 </p>
               </div>
-              <div className="lg:flex pt-12 lg:space-x-20 sm:inline-block space-x-4">
+              <div className="lg:flex pt-12 lg:space-x-20 sm:inline-block">
                 <div className="lg:border-l lg:h-[195vh] sm:hidden"></div>
                 <div className="lg:w-1/2 sm:w-full">
                   <div className="text-gray-400 ">
