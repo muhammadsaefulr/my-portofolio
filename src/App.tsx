@@ -91,7 +91,7 @@ function App() {
         "Platform streaming dan download anime sederhana dengan lingkungan runtime bun",
       projectPreview: "/project/ss-nimestream.jpeg",
       isAvailableOnGithub: true,
-      githubLink: "https://github.com/muhammadsaefulr/ApotekNextJS",
+      githubLink: "https://github.com/muhammadsaefulr/NimeStream",
     },
     {
       heading: "Gopotek",
